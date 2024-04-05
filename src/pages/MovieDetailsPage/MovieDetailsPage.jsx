@@ -2,7 +2,7 @@ import { Suspense, useEffect, useRef, useState } from 'react';
 import { Link, Outlet, useLocation, useParams } from 'react-router-dom';
 import { fetchDetails } from '../../fetchAPI';
 import { ErrorMessage } from '../../components/ErrorMessage/ErrorMessage';
-import Loader from '../../components/Loader';
+import Loader from '../../components/Loader/Loader';
 import css from './MovieDetailsPage.module.css';
 
 const MovieDetailsPage = () => {
@@ -80,4 +80,4 @@ const MovieDetailsPage = () => {
 };
 
 export default MovieDetailsPage;
-// fetchDetails
+

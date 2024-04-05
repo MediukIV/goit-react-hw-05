@@ -7,7 +7,7 @@ const navClassName = ({ isActive }) =>
     [css.active]: isActive,
   });
 
- const Navigation = ({ children } ) => {
+const Navigation = ({ children } ) => {
   return (
     <div>
       <header className={css.header}>

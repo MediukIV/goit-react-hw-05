@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-// import css from './HomePage.module.css';
 import { fetchMovies } from '../../fetchAPI';
 import MovieList from '../../components/MovieList/MovieList';
 

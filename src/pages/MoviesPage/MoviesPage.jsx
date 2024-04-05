@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { fetchMovie } from '../../fetchAPI';
 import toast, { Toaster } from 'react-hot-toast';
-import SearchForm from '../../components/SearchForm/SearchForm';
-import Loader from '../../components/Loader';
+import SearchForm from '../../SearchForm/SearchForm';
+import Loader from '../../components/Loader/Loader';
 import { ErrorMessage } from '../../components/ErrorMessage/ErrorMessage';
 import MovieList from '../../components/MovieList/MovieList';
 

@@ -1,12 +1,12 @@
 import axios from 'axios';
 
-const BASE_URL = '9e4afdd0caacb031d7d51312a2d345eb';
+const Authorization = '9e4afdd0caacb031d7d51312a2d345eb';
 
 export const fetchMovie = async query => {
   const URL = `https://api.themoviedb.org/3/search/movie?query=${query}&include_adult=false&language=en-US&page=1`;
   const options = {
     params: {
-      api_key: BASE_URL,
+      api_key: Authorization,
     },
   };
 
@@ -24,7 +24,7 @@ export const fetchDetails = async movieId => {
 
   const options = {
     params: {
-      api_key: BASE_URL,
+      api_key: Authorization,
     },
   };
   try {
@@ -40,7 +40,7 @@ export const fetchCast = async movieId => {
   const URL = `https://api.themoviedb.org/3/movie/${movieId}/credits?language=en-US`;
   const options = {
     params: {
-      api_key: BASE_URL,
+      api_key: Authorization,
     },
   };
   try {
@@ -56,7 +56,7 @@ export const fetchReviews = async movieId => {
   const URL = `https://api.themoviedb.org/3/movie/${movieId}/reviews?language=en-US&page=1`;
   const options = {
     params: {
-      api_key: BASE_URL,
+      api_key: Authorization,
     },
   };
   try {
@@ -72,7 +72,7 @@ export const fetchMovies = async () => {
   const URL = 'https://api.themoviedb.org/3/trending/movie/day?language=en-US';
   const options = {
     params: {
-      api_key: BASE_URL,
+      api_key: Authorization,
     },
   };
   try {
