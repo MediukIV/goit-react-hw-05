@@ -10,7 +10,6 @@ const MoviePage = lazy(() => import("./pages/MoviesPage/MoviesPage"));
 const MovieDetailsPage = lazy(() => import ("./pages/MovieDetailsPage/MovieDetailsPage"));
 const MovieCast = lazy(() => import ("./components/MovieDetails/MovieCast"));
 const MovieReviews = lazy(() => import ("./components/MovieDetails/MovieReviews"));
-
 function App() {
   return (
     <Navigation>

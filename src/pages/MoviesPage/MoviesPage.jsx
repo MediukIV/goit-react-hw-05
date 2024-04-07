@@ -14,7 +14,6 @@ const MoviePage = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const searchQuery = searchParams.get('query');
 
-
   useEffect (() => {
     const pageFetch = async () => {
     if (searchQuery && searchQuery.trim().length > 0) {
@@ -33,8 +32,6 @@ const MoviePage = () => {
     };
     pageFetch();
     },[searchQuery]);
-
-
 
     const formSearch = searchTerm => {
       if (searchTerm.trim().length === 0) {
